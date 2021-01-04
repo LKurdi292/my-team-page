@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "Poppins";
+    src:url("poppins/Poppins-Light.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PT Serif";
+    src: url("pt-serif/PTF55F.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 3% 15% 0%;
+    /* border: 1px solid blue; */
+}
+
+
+
+/* L'entête et le texte */
+#head {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+h2 {
+    font-family: "PT Serif";
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -4.5%;
+}
+
+#head #texte {
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 15%;
+    /* border: 1px solid red; */
+}
+
+#head #texte h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#head #texte p {
+    text-align: left;
+    /* border: 1px solid orange; */
+}
+
+
+/* Les photos */
+#containerAllPhotos {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+}
+
+    /* Chaque membre de l'équipe */
+.person {
+    width: 322px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid green; */
+}
+
+.person img {
+    width: 250px;
+    height: 350px;
+}
+
+
+/* .interieurImage {
+    border: 1px solid gray;
+} */
+
+
+.position {
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.name {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+}
+
+
+/* La disposition des photos sur la page */
+.haut {
+    margin-bottom: 18%;
+}
+
+#art_director {
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+#developer_1 {
+    margin-top: 10%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+footer a:visited {
+    color: black;
+}
+
+
+
+/* Media Queries */
+@media all and (max-width: 1385px) {
+    body {
+        margin: 3% 10% 0.5%;
+    }
+}
+
+@media all and (max-width: 1213px) {
+    #art_director {
+        margin-bottom: 10%;
+    }
+
+    #ux_designer {
+        margin-top: 10%;
+    }
+
+    #developer_1 {
+        margin-top: 0;
+    }
+
+    #developer_2 {
+        margin-top: 10%;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    body {
+        margin: 3% 5% 0.5%;
+    }
+
+    #head {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 720px) {
+    #head #texte {
+        padding-right: 0;
+    }
+
+    .person {
+        width: 220px;
+        height: 280px;
+    }
+    
+    .person img {
+        width: 150px;
+        height: 230px;
+    }
+}
+
+@media all and (max-width: 490px) {
+    #containerAllPhotos {
+        flex-direction: column;
+    }
+
+    .name {
+        margin: 0;
+    }
+
+    .person {
+       margin-top: 5%;
+       margin-bottom: 5%;
+       height: 260px;
+   }
+
+
+   #art_director {
+       margin-top: 5%;
+       margin-bottom: 5%;
+   }
+
+   #ux_designer {
+       margin-top: 5%;
+   }
+
+   #developer_1 {
+        margin-top: 5%;
+    }
+
+    #developer_2 {
+        margin-top: 5%;
+    }
+}
